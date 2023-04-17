@@ -43,7 +43,9 @@ submit.addEventListener("click", (e) => {
 
     card.innerHTML = template;
 
-    e.preventDefault;
+    document.getElementById("form").reset();
+
+    e.preventDefault();
 });
 
 
@@ -53,4 +55,6 @@ look.addEventListener("click", (e) => {
     }else if(!hs.classList.contains("hidden")){
         hs.classList.add("hidden");
     }
+
+    e.preventDefault();
 });
