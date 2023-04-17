@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="prueba.css">
+        <title>JavaScript</title>
+    </head>
+    <body class="m-0 p-0 t-0 w-[100%] bg-gradient-to-br from-yellow-400 to-yellow-900">
+        <main class="w-[100%] min-h-[100vh] flex flex-col gap-6 items-center justify-center  py-8">
+            <h1 class="text-white text-3xl p-8 rounded bg-sky-100/25 italic font-bold shadow-inner drop-shadow-md shadow-xl">
+                Aprendiendo
+                <span class="drop-shadow-md text-yellow-400">JavaScript</span>!
+            </h1>
+            <section class="flex gap-4">
+                <a href="./index.html"><span class="py-3 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">Inicio</span></a>
+                <a href="./index2.html"><span class="py-3 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">Pagina 2</span></a>
+            </section>
+            <div class="flex flex-col gap-2 w-[500px] justify-center items-center h-[200px] mt-16">
+                <form action="#">
+                    <div class="relative text-white mb-8">      
+                        <input type="text" class="bg-transparent py-[10px]" id="name" required>
+                        <span class="bar"></span>
+                        <label class="text-black text-[18px] absolute left-[5px] top-[15px]">Nombre</label>
+                    </div>
+                    <div class="relative text-white mb-8">      
+                        <input type="text" class="bg-transparent py-[10px]" id="lastName" required>
+                        <span class="bar"></span>
+                        <label class="text-black text-[18px] absolute left-[5px] top-[15px]">Apellido</label>
+                    </div>
+                    <div class="relative text-white mb-8">      
+                        <input type="text" class="bg-transparent py-[10px]" id="age" required>
+                        <span class="bar"></span>
+                        <label class="text-black text-[18px] absolute left-[5px] top-[15px]">Edad</label>
+                    </div>
+                    <div class="flex gap-x-2 pl-8">
+                        <button id="send" type="submit" class="py-1 px-4 rounded shadow-inner drop-shadow text-white bg-white/20 hover:bg-black/25 hover:text-yellow-100">Registrar</button>
+                        <button id="look" class="py-1 px-4 rounded shadow-inner drop-shadow text-white bg-white/20 hover:bg-black/25 hover:text-yellow-100">Ver Registros</button>
+                    </div>
+                </form>
+                
+            </div>
+            
+            <!--llenar con Javascript-->
+            <div id="registros" class="flex flex-col items-center mt-6 hidden">
+                <h2 class="text-white text-3xl pt-10 rounded italic font-bold">Registros</h2>
+                <div id="add" class="flex gap-x-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+                    
+                </div>
+                
+            </div>
+            
+        </main>
+    </body>
+
+    <script src="clases.js"></script>
+</html>
